@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="all tests">
+    <test name="Some tests" parallel="methods" thread-count="3" group-by-instances="true">
+        <classes>
+            <class name="playwright.PlaywrightParallelExecution"/>
+        </classes>
+    </test>
+</suite>

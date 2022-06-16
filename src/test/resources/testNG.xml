@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="all tests" parallel="tests" thread-count="3" group-by-instances="true">
+    <test name="Should click button">
+        <classes>
+            <class name="playwright.PlaywrightParallelExecution">
+                <methods>
+                    <include name="shouldClickButton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Should Check The Box">
+        <classes>
+            <class name="playwright.PlaywrightParallelExecution">
+                <methods>
+                    <include name="shouldCheckTheBox"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Should Search Wiki">
+        <classes>
+            <class name="playwright.PlaywrightParallelExecution">
+                <methods>
+                    <include name="shouldSearchWiki"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
