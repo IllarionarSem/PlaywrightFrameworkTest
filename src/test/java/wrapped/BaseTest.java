@@ -1,4 +1,4 @@
-package playwright.APITest;
+package wrapped;
 
 import com.microsoft.playwright.Playwright;
 import org.testng.annotations.AfterTest;
